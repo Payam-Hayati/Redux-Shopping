@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*:focus {
+  outline: none;
+}
+
+@layer base {
+  body {
+    @apply bg-gray-800 text-gray-50 px-8 py-2;
+  }
+
+  input {
+    @apply rounded text-gray-900 px-1 py-1 border-none;
+  }
+
+  img {
+    @apply rounded-full;
+  }
+}
+
+@layer components {
+  .container {
+    @apply text-2xl;
+  }
+  .btn-blue {
+    @apply bg-cyan-900 text-gray-50 rounded font-semibold p-2 cursor-pointer hover:bg-cyan-700 transition-all;
+  }
+
+  .btn-red {
+    @apply bg-red-700 text-gray-50 rounded font-semibold p-2 cursor-pointer hover:bg-red-500 transition-all;
+  }
+}
